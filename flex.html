@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="h-screen">
+    <!-- now humlog dekhenge ki Tailwindcss k andar flex classes ka use kaise kar skte hai
+    aur sabse pehle baat karenge ki ittems ko rows ya phir columns mein kaise put kar 
+    sakte hai flex classes ki help se uske baad dekhenge ki items k orders ko Reverse kaise kar
+    sakte hai aur items ko centre align kaise kar sakte hai aur ye centre align dono tarike se
+    dekhne wale hai horizontally bhi aur vertically bhi aur uske baad baat karenge humlog ki flex
+    classes ki help se humlog ittems ko wrap kaise kar sakte hai next line mein  agar ek line mein humare
+    pass item bohat jyada ho rhe hai toh hum log dekhenge ki flex classes ki help se humlog ittems ko wrap
+    kaise karenge
+    interview question is-- How to change item order for small screens?
+    so screen size bohat saare hai like sm,md,lg,xl toh question hai ki jaise screen size small ho rha 
+    hai toh uss case mein item k order ko change kaise kar skte hoo aap   -->
+
+    <!-- <div class="bg-gray-200
+     size-full 
+     flex 
+     flex-col 
+     justify-around
+    items-center">
+
+     -->
+
+
+        <!-- so flex ka use basically hotta kya hai ki flex aapke items ko ,aapke screen k jitne bhi div 
+        wagera hai ya jo bhi element aaplog use kar rhe hoo unko flexible kar deta hai aur unki wajah se 
+        aaplog Responsive side bhi bana sakte hoo aur jaise bhi inko use karna chahte ho apne items ko
+        Reverse order mein, ya phir unko center align karna chahte ho unko justified krna chahte ho jo bhi 
+        aap children k upar apply karna chahte ho woh aap aaram se kar sakte hoo so pehle children k 
+        parent item ko flex kardo toh jaise parent mein class mein flex likhenge to waise  hii uss parent
+        k jitne bhi children hai woh sab ek line mein aajayenge horizontally align ho jayenge means ek
+        rows mein aajayenge ssare children but agar hum chahte hai ki saare childrens vertically ek line
+        mein aajayenge toh humlog parent mein class add krenge i.e "flex-col" aise karke
+        now agar aapko reverse order chaiye children mein jaise aapko chaiye ki green wala jo sabse
+        last mein hai box woh green wala muje upar 1st pehla chaiye aur red wala muje sabse last mein chaiye 
+        then humlog parenty mein add karenge class="flex-col-reverse" aise karenge toh items k order 
+        reverse ho jayenge aur bottom bhi aajayega 
+        Note ye -- flex utne size mein hii kaam karega jitne size mein parent hai means parent div
+        k size mein hii flex kaam krega aur parent div k andar hii saare child items aajayenge
+        so abhi parent div ka size-full diye hai but agar ye "size-full" class hatta denge parent
+        div se toh actual size of div mein hii saare childrens aayenge flex k
+        Now abb hum parent div mein wapis row mein sab laate hai toh "flex-col" class ko hatta doo abhi
+        sirf "flex" class rehne doo parent mein toh sab children ek row mein rahenge so abb humlog
+        iske upar kuch chize apply karna  chahte hai jaise main chahta hoon justify-centre hokar aajaye
+        i.e class="flex justify-center" denge toh sab childrens centtre mein aajayenge aur left and Right
+        se gap space aajayega so means ye left or Right se centre mein aajayega but abb agar main bolumga 
+        ki muje isko left and Right se centre nhi krna tha balki muje isko Top and bottom se centre karna 
+        tha toh parent div mein ek aur class add kardo i.e "items-center"
+        so iss class="bg-gray-200 size-full flex justify-center items-center" se jo children items
+        hai woh screen k ekdum center mein aajayenge means children items ye lefte and Right se bhi
+        center mein aajayenage and Top and Bottom se bhi centre mein aajayenga abb agar inn 
+        children items k bich mein agar mein gap  chahta  hoon then humlog justify-center se isko
+        hattta kar "justify-between" kar denge then inn items k bich mein gap aajayega
+        now abb agar chahta hoon ki left and Right mein bhi gap aajayega of 1st and last item of children
+        mein toh justify-around kar denge
+        Now  ye sab toh Rows mein aarahi hai toh agar hum chahte hai ki ye sab column mein aaye toh
+        humlog ek class add krenge i.e "flex-col"   -->
+
+<!--         
+        <div class="bg-red-300 size-20"></div>
+        <div class="bg-blue-300 size-20"></div>
+        <div class="bg-yellow-300 size-20"></div>
+        <div class="bg-green-300 size-20"></div>
+    </div> -->
+
+
+    <!-- now abb humlog ek aur div banate hai and then uske upar flex-wrap wagera ye chize apply karke
+    dekhenge
+    Note class="flex-wrap" use karne se children item box ka size small nhi hota screen small krne
+    par balki woh sab saare elemnets next line mein shift ho jate hai adjust karke aur jab next line
+    mein shift hote hai toh lines k bich mein Gaps aajate hai aur unn Gaps ko less ya Gayab karne k liye
+    ek aur class add karte hai i.e content-start class add krte hai isse lines k bich mein Gaps 
+    nhi hoti now abb hum ek aur class add karenge i.e class="flex-col" toh isse saare children 
+    element ye sab by default columns mein means vertically aajayenge abb phir humlog 
+    ek aur class add karenge i.e "sm: flex-row " iska mattlab hai jab bhi humara screen size
+    sm se upar jayega toh saare children elements ye Rows mein chale jayenge from columns se  -->
+    <div class="size-full bg-pink-100 flex flex-wrap content-start flex-col sm:flex-row">
+        <div class="bg-red-300 size-32"></div>
+        <div class="bg-blue-300 size-32"></div>
+        <div class="bg-orange-300 size-32"></div>
+        <div class="bg-yellow-300 size-32"></div>
+        <div class="bg-green-300 size-32"></div>
+        <div class="bg-gray-300 size-32"></div>
+        <div class="bg-slate-800 size-32"></div>
+        <div class="bg-violet-800 size-32"></div>
+        <div class="bg-orange-900 size-32"></div>
+        <div class="bg-cyan-800 size-32"></div>
+        <div class="bg-yellow-600 size-32"></div>
+        <div class="bg-red-600 size-32"></div>
+    </div>
+</body>
+</html>

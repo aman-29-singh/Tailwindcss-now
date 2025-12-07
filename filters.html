@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- now we will see ki tailwindcss mein hum images k saath mein filters kaise use kar skte hai
+    toh ye filters Game changing feature hota hai UI k liye 
+    toh humlog images k upar filter lagayenge means jaise images k upar jyada blur karna hai, less
+    blur karna hai ,image ko black and white krna hai,image k color ko opposite karna hai invert
+    krna hai, color contrast krna hai so yeh saari chize hum filter k saath mein aaram se kar skte hai
+    toh agar humlog core css k andar filter apply karenge toh humein thoda sa jyada css ka code likhna 
+    padega but Tailwind css mein bohat hii aaram se aur just ek class ka use karke hum inn filters ko
+    apply ko apply kar skte hai
+    now why filter is game changing feature? so image ka feture hum  photoshop wagera se change karte h
+    then jab uss image ko hum apne application par use krenge toh ho skta hai ki image humari application
+    k upar aane k baad thik se na dikhe so yahan par filters humlog directly css k saath apply kar skte h
+    toh isse kya hoga ki humein ussi time pata chal jayega ki ye image application k saath achi lag rhi
+    hai ya nhi lag rhi hai toh ussi hisaab se humlog chizo ko kam  jyada kar skte hai -->
+    <img src="funny-image.jpg"/>
+    <!--so abb mein chahta hoon ki jo imaage hai n ye thodi si blur hokar aaye so iske liye 
+    hum simply ek class use krenge class="blur"-->
+    <img class="blur" src="funny-image.jpg"/> <!--so isse image blur ho jayegi-->
+    <!--now less blur karna hai ,jyada blur krna hai i.e we will use blur-sm,blur-md, blur-3xl-->
+    <img class="blur-sm" src="funny-image.jpg"/>
+    <img class="blur-md" src="funny-image.jpg"/>
+    <img class="blur-3xl" src="funny-image.jpg"/>
+    <!--so aise image ko hum log kamm jyada blur kar skte hai aur ho skta hai toh humlog
+    issi taraah se text ko bhi blur kar skte hai-->
+    <h1 class="blur-sm">Blur the image </h1>
+
+    
+    <img class="" src="funny-image.jpg"/> <!--it is normal image -->
+    <h1 class="m-10">now we will see the brightness of images</h1>
+    <!-- now image ki brightness increase karke dekhenge -->
+     <img class="brightness-50" src="funny-image.jpg"/>
+     <img class="brightness-100" src="funny-image.jpg"/>
+     <img class="brightness-150" src="funny-image.jpg"/>
+     <img class="brightness-250" src="funny-image.jpg"/>
+
+     <img class="" src="funny-image.jpg"/> <!--it is normal image -->
+    <h1 class="m-10">now we will see the contrast of images</h1>
+    <!-- now image ki contrast increase karke dekhenge -->
+     <img class="contrast-0" src="funny-image.jpg"/>
+     <img class="contrast-50" src="funny-image.jpg"/>
+     <img class="contrast-100" src="funny-image.jpg"/>
+     <img class="contrast-125" src="funny-image.jpg"/>
+     <img class="contrast-200" src="funny-image.jpg"/>
+
+     <h1 class="m-10">now we will see the grayscale of images</h1>
+     <img class="grayscale" src="funny-image.jpg"/>
+
+     <h1 class="m-10">now we will see the invert of images</h1>
+     <img class="invert" src="funny-image.jpg"/>
+
+     <h1 class="m-10">now we will see the Hue of images</h1>
+     <img class="hue-rotate-15" src="funny-image.jpg"/>
+     <img class="hue-rotate-60" src="funny-image.jpg"/>
+     <img class="hue-rotate-15" src="funny-image.jpg"/>
+     <img class="hue-rotate-90" src="funny-image.jpg"/>
+     <img class="hue-rotate-180" src="funny-image.jpg"/>
+
+     <!--Note agar humein filters ko disable agar karna hai then humlog jayenge tailwind.config.js mein 
+     aur udhar plugins[], k baad hum likhenge corePlugins:{ filter: false } aisa karenge then kisi
+     bhi images par abb koi bhi filter nhi hoga 
+     Now ek aur question hai interview ka ki what is differnce between Display none and visibility hidden-->
+
+</body>
+</html>

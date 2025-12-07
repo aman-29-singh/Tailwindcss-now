@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+
+<body class="h-screen">
+    <!-- now ye media-query ye core css ka ek feature hota hai and we have a list of break-points 
+    ki kahan kahan par tailwindcss mein humare pass break-points hote hai kiske screen-size k
+    liye available hote hai yeh then jitne bhi screen size available hote hai humare pass
+    tailwindcss mein sabke liye style add karke dekhenge aur agar specific screen-size k liye 
+    css add karna hai toh woh kaise kar skte hai ttailwindcss mein uske baare mein baat krke 
+    dekhenge 
+    aur interview question is ki tailwindcss mein breakpoints kis kis screen-size k liye hote h?  -->
+
+    <!-- now what is media query ? so media query basically humlog use krte hai Respponsive UI banane k
+    liye so hota kya hai Responsive Ui mein ki humare pass differnt different screen size k devices
+    hai maan lo ek mobile hai,ek tablet hai,ek chota laptop hai, ek bada laptop hai,ek desktop h
+    aur unka screen-size kuch aisa hai ki laptop k liye 480px, tablet k liye 720px, chote laptop k
+    liye 1024px aur bade laptop k liye 1280px aur bade monitor wagera k liye 1500px ye pixel size hai
+    aur sabke liye humein screen size add karni hai sabke upar jo humari application hai woh perfect
+    dikhni chaiye uski UI kahin bhi break nhi honi chaiye so iske liye humlog kya krte hai ki
+    different different screen size k liye different different style likhte hai toh media query help
+    karti hai humari ki aapko kis screen size k liye kaunsa style likhna hai 
+    so ye humein aise batatai hai ki aaplog agar 720pixel ki niche ki style k screen k upar agar 
+    kaam karna chahte ho toh iske liye alag se css likh skte ho ,1000 k niche k screen par agar 
+    kaam krna chahte ho toh iske liye alag se css likh skte ho etc toh isliye jo bhi aapko
+    screen size chaiye uske hisaab se humlog alag se style likh skte hai toh ismein 
+    media-query help krta hai 
+    so what is breakpoints?
+    toh break-points ek fetaure hai tailwindcss mein jo humein by default diya gya hai ki 
+    taki hunlog different different screen size k liye different different style add kar paye
+    so in tailwindcss documentation mein ye humare breakpoints hai - 'sm','md','lg','xl',2xl
+    toh ye sab 'sm','md','lg','xl',2xl break-points hai tailwindcss mein inko humlog break-points
+    bolte hai prefix bol skte hai
+    so 'sm' - liye 640px hai minimum width means sm- mein koi bhi style denge toh woh minimum 
+    640pixel tak k screen size par woh style  dikhega aur jaaisse hii screen-size 640pixel k
+    niche gya toh 'sm' ka style gayab ho jayega because minimum width for "sm" breakpoints is 640px
+    aur "md" ka minimum width 768px and "lg" screen ka minimum width 1024px and "xl" screen ka minimum
+    width hai 1280px aur "2xl" screen ka minimum width hai 1536 pixel
+    so ye sab 'sm','md','lg','xl',2xl prefix hai break-points k toh ye breakpoints hai
+    abb isko use kaise karte hai ye dekhenge     -->
+
+    <!-- now  interview mein ek question puchte hai ki kya aapko Tailwindcss mein media query alag se
+    define karne ki jarurat hai toh applog bologe nhi because humlog directly break-points
+    ka use kar lenge i.e 'sm','md','lg','xl',2xl iska yahi humlog k liye kaafi hai so alag se humlog
+    ko define karne ki jarurat nhi hai -->
+
+    <div class="bg-red-500 h-full
+     lg:bg-green-500
+      md:bg-blue-500
+       sm:bg-amber-500
+    xl:bg-slate-500 
+     2xl:bg-pink-600">
+        <!--so hum chahte hai ki jab humare pass screen size 1024px se jyada hai i.e "lg"
+        so jab humare pass minimum width 1024px means itni hai toh hum chahte hai ki iske upar
+        ek alag se size dikhe so humlog class="lg:bg-green-500" toh isse screen ka color green rahega
+        so screem ka color green tab tak rahega jab tak screen ka size 1024px se bada hoga aur
+        jahan screen ka size 1024px se less hua whan bg-red-500 ho jayega screen ka color so ye 
+        isliye hoga because humne "lg : bg-green-500" so humlog ne "lg" breakpoint use kiya hai
+        isliye aisa hoga 
+        aur humne ek aur breakpoint  use kiya hai i.e "md" i.e md:bg-blue-500 so isse jab screen size
+        1024px k niche less jayegi toh screen color blue ho jayega aur jab tak screen size 1024px k above
+        rahega tab tak screen color green rahega aur breakpoint "md" ka minimum width hai 768px means
+        jab screen size 768pixel se less ho jayega toh screen ka color blue se change ho jayega 
+        
+        so humne ek aur breakpoints lagaya i.e "sm: bg-amber-500 " so sm breakpoint mein minimum
+        width hai 640px means jab screen size 640px se above rahega tab screen ka color amber-500 hoga
+        but jaise hii screen ka size 640px se less hua toh screen ka color change ho jayega in red-500
+        mein hoga
+        
+        phir humne ek aur breakpoint add kiya i.e xl:bg-slate-500 so ye "xl" breakpoints ka style 
+        tab lagega jab screen size 1280px k above hoga because minimum width for "xl" breakpoints is
+        1280px hai so jab bhi screen size 1280px se above jayada hoga toh screen color slate-500 hoga
+        because humne breakpoint add kiya hai i.e xl:bg-slate-500" ye
+        
+        now humne ek aur breakpoint add kiya hai i.e "2xl" so iska minimum width hotta hai 1536px
+        means jab bhi screen size 1536px se jyada ya above hogi toh ye wala 2xl:bg-pink-600 screen
+        ka color ho jayega means screen ka color pink ho jayega  -->
+
+        <h1 class="text-4xl 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-9xl">
+            <!--now textt ki size change karenge according to different breakpoints like sm,lg,xl,2xl-->
+            code step by sttep
+        </h1>
+    </div>
+
+</body>
+
+</html>

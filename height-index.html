@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="h-screen">
+    <!--so ye h-screen humein allow krti hai h-full ya h--50% use krne k liye -->
+    <!-- now we will see the mx-height min-height,etc -->
+
+    <div class="bg-green-200">code step by step</div> <!--ye by default height hai according to element-->
+ 
+    <div class="bg-green-300 h-30">so its a specific height according </div>
+
+    <!--so h-screen ki wajah se hum h-full ya h-40% aisa use kar skte hai -->
+    <div class="bg-pink-300 h-1/2">50% height</div>
+
+    <!-- now agar 33% height use karna chahte hai so 1/3 kardo -->
+     <div class="bg-amber-700 h-1/3 text-white">height is 33%</div>
+     <!-- and 1/5 karenge means screen ka 20% lega height to aise krte hai  -->
+
+     <!-- now minimum maximum height dekh lete hai -->
+      <!-- so max-h-50 pixel diye means iski jo maximum height hai n woh 5o pixel se jyada nhi jayegi  -->
+      <div class="bg-pink-400 h-100 max-h-50">50pixel height se jyada nhi jayega </div>
+
+      <!-- now humlog minimum height 20 denge so iski height minimum 20 hogi aur 20 se less 
+       height nhi hogi
+       aur agar h-70 denge ttoh jayega because minimum height i.e min-h-20 hai isse less nhi ho skta
+       but min-h-20 iss 20 se jyad kitna bhi jaa skta hai -->
+       <div class="bg-green-400 min-h-20 m-5 h-5" >here minimum height is 20 </div>
+    
+
+</body>
+</html>

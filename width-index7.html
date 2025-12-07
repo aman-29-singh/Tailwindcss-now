@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- so by default ye <h1> tag full width lega because inka display block hota h  -->
+    <h1 class="bg-pink-200">Now we will see width,min-width,max-width</h1>
+    
+    <!-- so by default ye <div> tag bhi full width lega because inka display block hota h  -->
+    <div class="bg-blue-200">this is a width and it will take gull width by default </div>
+
+        <!-- so by default ye <span> tag bhi full width  nhi lega because ye <span> ka display
+            inline hota hai and inline hone ki wajh se jitna content yahan par fit hota hai n utni hii
+            width lega baki ki chiz ye leta hii nhi hai  -->
+        <span class="bg-pink-600">this is a width and it will not take full width </span>
+
+        <!-- /**now humlog dekhenge ki ki ek simple si width kaise apply ki jati hai ttoh div par 
+         dekhenge Note 1rem = 16pixel */ -->
+         <div class="bg-amber-700 w-12">aman code step by step</div>
+         <div class="bg-pink-700 w-50">aman code step by step</div> 
+         <!-- so ye w-50 means 200pixel and 12.5 rem hota hai -->
+
+         <!-- now we will see the maximum width means agar humne max-w-50 diya toh ye w-50 se jyada nhi
+           lega so idhar ye <div> tag ka display Block hai so isse full widtth lena chaiye but because
+            humne max-width-50 diya hai isliye ye sirf w-50 tak hii lega diye phir bhi ye w-50 tak 
+            hii lega because humne max-w-50 diya hai -->
+         <div class="bg-violet-600 max-w-50">seeingg  max-wiidth</div>
+
+         <!-- now humlog dekhenge min-width means itni minimum width ttoh ye lega hii lega isse kam ye nhi
+         le skta so min-w-100 itna toh ye lega hii lega so agar humne w-20 bhi diya toh bhi ye w-100 hii
+         lega because humne bola hai min-w-100 isse kam less width ye nhi le skta -->
+         <div class="bg-yellow-500 min-w-100 w-20">minimum widtth</div>
+
+         <!-- Note- Tailwind css mein koi bhi Range nhi hoti hum kitna  bhi range de skte hai like 105,107 
+         aise kittna bhi range de skte hai according ton Tailwindcss 4 but poorane ttailwind mein hum sirf
+         range k hisaab se dena padtha tha -->
+
+         <!-- now agar humein width poore screen meiin dena hai toh hum widtth full de skte  
+         like w-full aise karke  -->
+         <div class="bg-amber-900 w-full">this is width full</div>
+
+         <!-- abb agar chahte hai ki aadhi scrren par aaye means 50% screen par aaye toh isle liye
+         hum krenge w-1/2 aisa krenga -->
+         <div class="bg-cyan-900 w-1/2 mt-5">this is width half </div>
+
+         <!-- now agar humein width 33% leni hai screen mein so hum w-1/3 kr skte hai -->
+          <div class="bg-cyan-600 w-1/3 mt-5">this is width 33% </div>
+         
+
+          <!-- now xs means 320 pixel,xl- 576 pixel,2xl - 672 pixel aisa karke width dekhenge -->
+          <div class="bg-cyan-600 w-xs mt-5">this is width xs </div>
+          <div class="bg-cyan-600 w-xl mt-5">this is width xl </div>
+          <div class="bg-cyan-600 w-2xl mt-5">this is width 2xl </div>
+
+          <!-- now specific width apply karna haia toh aise krte hai Hello k upar -->
+           <div class="bg-cyan-600 w-[12px]">this is specific width </div>
+            <div class="bg-pink-600 w-[17px]">Hello </div>
+</body>
+</html>

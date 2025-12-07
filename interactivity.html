@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- now interactivity ka matlab kya hota hai? so iska simple sa matlab hai ki UI par humne koi
+    event perform kiya and UI ne uss event ka response kiya toh ye ek interactivity hui 
+    jaise hover hua, click hua ,mouse move hua iss tarike se 
+    so events ko humlog basically inrteractivity bol rhe hai toh tailwindcss mein eventts aur 
+    interactivity ka kya kaam hai 
+    so Tailwindcss k help se jo humari interactivity hoti hai n inke upar style change kar sakte
+    hai jaise ki hover par kuch aur style de skte ho, focus pe kuch aur style de skte ho,
+    active pe kuch aur style de skte hai iss tarike se so now question arises ki iss hisaab se
+    toh click event bhi ek interactivity hua iska toh humne koi mention nhi kiya toh jo humlog
+    mouse move karte hai n toh uss interactivity ko humlog cover kar sktte hai hover k saath, aur
+    jo click eventt hote hai usko humlog cover krte hai focus, and active k saath mein so don't worry
+    click eventt wali interactivity humein yahan dekhne mil jayegi
+    so now we will understand ki hover k upar style kaise apply kar skte hai, Focus k upar style kaise
+    apply kar skte hai, Active k upar kaise style apply kr skte hai and ye Group hover kya hota hai\
+    isko bhi samajenge and interview question arise ki what is difference between Focus and Active?  -->
+    
+    <button class="bg-blue-500 hover:bg-blue-900 hover:text-white rounded-md p-2 m-4">Login</button>
+    <button class="bg-blue-500 hover:bg-blue-900 hover:text-white m-4">Login</button>
+
+    <!-- abb hum chahte hai ki focus ka bhi use kare means agar kisi button par focus lagaye h means jab
+    uss button par click krenge toh woh button focus mein aajayega aur jab tak screen mein kahin aur 
+    jagah pr click na karu tab tak woh button focus mein rhega  so ek button lenge Login ka so by default
+    iss button ka color blue rhega but jab hum ye Login button par click karenge toh ye Login button
+    focus mein aajayega aur ye Login button ka color blue se yellow ho jayega toh ye Login button 
+    focus mein aagaya abb jab tak hum kahin aur par yahan kahin aur jagah click nhi krenge tab tak
+    ye Login button yellow color mein hoga but jab hum kahin aur jagah click kar denge toh ye button
+    ka color change ho jayega from yellow to blue means ye button focus se hatt gya-->
+    <button class="bg-blue-500 hover:bg-blue-900 hover:text-white m-4
+    focus:bg-yellow-600">Login</button>
+
+    <!-- now mein chahta hoon ki jab tak mein Login button par click karke rakhu tab tak ye Login
+    button ka color change ho aur jaise mein click se hatta du tab ye red color se change ho jayega
+    apne default color blue mein toh iss case mein hum use krenge active property ka     -->
+    <button class="bg-blue-500 rounded-md p-2 m-4 text-white active:bg-red-500">Login</button>
+
+    <!-- now hum chahte hai ki teeno chize mein ek saath implement krke dekhu  -->
+     <button class="bg-blue-500  hover:text-white rounded-md p-2 m-4
+     hover:bg-blue-900
+     focus:bg-yellow-600
+     active:bg-red-500
+     ">Login</button>
+
+     <!-- now dekhenge what is Group hover  -->
+     <div>
+        <a class="group">
+            <h1 class="hover:text-blue-600 group-hover:bg-black group-hover:text-white">
+                <!--so isse group-hover:bg-black karne se jab hum niche wale <p> para click par bhi
+                    hover karunga toh ye <h1> tag ka bg color black hooga -->
+                Heading click</h1>
+            <p class="group-hover:bg-black group-hover:text-white">para click</p>
+        </a>
+     </div>
+</body>
+</html>

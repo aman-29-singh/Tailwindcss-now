@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- now Tailwindcss mein container class ki help se humlog apni Responsive website ki width ko
+    mnnanage kar skte hai adjust kr skte hai Note Tailwindcss yahi kaam karti hai ki ye dono
+    side mein space de degi thoda sa different different breakpoints k upar so breakpoint abhi samajenge
+    butt dono side break dedegi abhi k liye itna samaj lete hai 
+    so iss chiz ka fayada kya hai toh iss chiz ka fayada yeh hai ki maan lo humne abhi ttoh iss page 
+    ko google.com ko iss laptop mein open kara hai  maan lo baad mein kisi tablet mein,chote laptop mein,
+    monitor mein ,ya lcd device mein means different dfifferent device mein isko open krte hai toh 
+    isse kya rahega ki dono side mein thoda sa space manage rahega aur space cutta hua nhi dikhega
+    maan lo abhi jis par page open hai uss laptop ka width 1280 hai aur humne ek aur lapttop liya jiski
+    jo width hai woh 1300 hai ya phir 1250 hai toh dono mein farak rahega ki ismein white space badh jayega
+    lekin content humara same hii dikhega so issiliye humlog container class ka use krte hai taki 
+    Responsive jab bhi humlog website banayenge toh jo humara container hai woh properly centre k 
+    andar visible rahe bilkul bhi problem na aaye usko dekhne k andar   -->
+    <div>
+        <!-- now hum chahte hai ki maximum space humara Header lele  -->
+        <ul class=" bg-blue-500 flex justify-end [&>*]:p-4" >
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+        <!--so abb jaise bhi hum screen ko adjust kare huamara Header fix rahega ;aur humari
+        niche ki class choti badi hotti rahegi according to different screen size i.e container class-->
+    </div>
+    <div class="text-8xl bg-amber-200 container mx-auto"> <!--ye container likhne se Right side mein space aajata hai-->
+        Container class
+    </div>
+
+    <div class="text-7xl bg-amber-400 container mx-auto">
+        mid page
+    </div>
+
+    <div class="text-6xl bg-amber-600 container mx-auto">
+        down page
+    </div>
+
+    <div class="text-4xl bg-amber-800 container mx-auto">
+        bottom page
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- now dekhenge tailwindcss mein columns classes k baare mein ttoh sabse pehle dekhenge ki column 
+    classes ka use kya hota hai kuch examples dekhenge columns ko images k saath use karke 
+    dekhenge , columns k saath Responsive UI bhi banayenge 
+    aur 2 interview quetions are 1st is what is Range of columns? 
+    and 2nd question is jab bhi hum columns ka use karte hai toh by default ek gap aatta hai aur 
+    uss gap ko kaise Remove kr skte hai kaise kamm ya phir jyada bhi kar skte hai -->
+
+    <!--now sabse pehle columns ka use kya hai?
+    so columns ki help se hum apne UI ko equal parts mein divide kr skte hai jaise agar humned use
+    kiya col-2 toh humari UI 2  means humare project ki UI 2 equal parts mein divide ho jayegi
+    agar humne use kiya col-4 toh humari UI 4 equal parts mein divide ho jayegi similarly agar
+    col-12 use karenge toh humari UI 12 equal parts mein divide ho jayegi so 
+    so abb range batao ki humlog kitni minimum columns use kar sakte hai aur kitne maximum columns
+    use kar sakte hai iski Range batao toh iske liye tailwindcss ki documentation mein jaakar search
+    karo columns in tailwindcss so udhar humlog column-1 se lekar column-12 tak direct use kar
+    skte hai uske baad bhi kuch properties hoti hai jaise ki column-auto, column-2xs,column-3xs,
+    column-md, column-lg,column-xs etc so ye basically Responsive UI k liye kaam mein aati
+    hai but aagar humein without Responsive UI k kaam karna hai toh humlog directly column-1 se
+    column-12 ttak direct use kar skte hai-->
+
+    <!--
+    <div class="columns-4"> 
+        so parent mein column-2 diye to ye screen ko 2 equal prts mein divide krdegi
+        <h1 class="bg-red-500">Heading 1</h1>
+        <h1 class="bg-slate-500">Heading 2</h1>
+        <h1 class="bg-green-500">Heading 3</h1>
+        <h1 class="bg-blue-500">Heading 4</h1>
+        <h1 class="bg-pink-500">Heading 5</h1>
+    </div>  -->
+
+    <!-- toh abb columns k  saath mein humlog images ko use karke dekhenge  -->
+     <!-- <div class="columns-1 lg:columns-4 md:columns-3 sm:columns-2">
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+         <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+     </div> -->
+
+     <!-- now humlog isse auto-responsive bhi bana skte hai -->
+      <div class="columns-3xs">
+        <!-- toh yeh class="columns-3xs" se kya hoga ki jaise jaise screen small hota chale jayega
+        waise waise hii image ko apne aap fix karta chala jayega means auto-responsive kar dega
+        so aise Responsive karne k liye column mein classes hai alaga se like column-md,column-lg,
+        column-sm,column-2xs aise karke default mein classes present hai Responsive karne k liye in 
+        tailwindcss mein so humlog inmein se koi bhi class use kar skte hai columns ko Responsive 
+        banaane k liye    -->
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+         <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+        <img src="funny-image.jpg" alt=""/>
+
+
+
+      </div>
+
+</body>
+</html>

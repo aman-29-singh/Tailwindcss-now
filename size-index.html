@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body class="h-screen">
+   <!--size classes witth ttailwind css-->
+   
+   <!--so hum div k upar same height and width leni hai-->
+   <div class="w-50 h-50 bg-amber-400">aman height</div>
+   <!-- so ye upar wala 2 classes mean w-50,h-50 use karne ki jagah humlog use krenge size50
+   toh ye class="size-50" ye bhi same result dega like class="w-50 h-50" ki tarah
+   so Note-- ki size mein height, width by default dono ki property hoti hai  -->
+   <div class="bg-pink-400 size-50">use of size class</div>
+   
+   
+   <!-- so Notte jahan bhi humein same height and width ka use karna hoo wahan hum size 
+    class ka use kr skte h -->
+ 
+ <!--Note here min-size-40 karenge and size-20 denge toh size-20 wala chalega because ye min,max
+    ye size k saath kaam nhi krte so ye min,max ye sirf height,width k saath hii kaam karte hai -->
+    <div class="bg-green-400 size-25 min-size-40">min and max will not work with size</div>
+    <!--so here size-25 hii lega because min,max yeh size k saath work nhi kartte min,max ye sirf 
+    height,width k saath kaam krte hai-->
+
+    <!-- Note hum size k saath bhi 1/2,1/3 50% use kar skte hai but directly karenge toh sirf width
+    kaam karega aur height kaam nhi karega so height kaam kare iske liye humnein parent meiin
+    h-screen use karna padega so here parent is <body> so <body class= " h-screen" >-->
+        <div class=" bg-amber-700 size-1/2">size in percent like 1/2</div>
+
+        <!--similarly agar size-fit use karenge toh content k hisaab se fit ho jayega--> 
+        <div class="bg-violet-600 size-fit">hello aman</div>
+
+        <!-- aur agar fix pixel deni hoo toh woh bhi kar skte so fix value deni ho toh aise krenga -->
+         <div class="bg-amber-500 size-[123px]">specfix pixels</div>
+</body>
+</html>

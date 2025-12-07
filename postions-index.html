@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- postions ye css k andar properties hoti hai jinke help se humlog ye decide karte hai ki 
+    humari html element ye screen mein kahan par display hogi means ttop mein display honge,ki
+    bottom mein display honge , ki Right mein left mein , center mein ya phir unn elements ki 
+    position fix hone wali hai ki poori ki poori screen scroll hoti rahe but woh yahan par 
+    fix rahengi jaise humlog bohat baar dekhtte hai fix header wagera toh iss tarike se 
+    ye saari chize humlog position k saath use kar sktte hai css aur Tailwindcss dono k andar   -->
+    
+    <!-- <div class="bg-red-200 size-52 absolute bottom-0 left-0 "></div>
+    <div class="bg-violet-600 size-52 absolute top-0 left-0 "></div>
+    <div class="bg-green-200 size-52 absolute right-0 "></div>
+    <div class="bg-yellow-200 size-52 absolute bottom-0 right-0 "></div> -->
+
+    <!-- now ye upar k chaaro toh thik hai but hum chahte hai ki bich meein ek div hai 
+    aur uss div k andar ye above k chaaro div corner corner par dikhe -->
+    <div class="bg-red-500 size-96 relative">
+        <!-- so ye parent class ko relative karne se ye niche k chaaro div iss bade 
+        big div k andar aajayenge  -->
+        <div class="bg-red-200 size-20 absolute bottom-0 left-0 "></div>
+    <div class="bg-violet-600 size-20 absolute top-0 left-0 "></div>
+    <div class="bg-green-200 size-20 absolute right-0 "></div>
+    <div class="bg-yellow-200 size-20 absolute bottom-0 right-0 "></div>
+    </div>
+
+    <div class="bg-blue-500 size-96">
+        <!-- now mein chahtta hoon ki ye <h1> ttag fix rahe na upar jaye aur nahi niche jaaye jab 
+            hum scroll karein toh mein chahta hoon ki ye h1 tag fix postion par rahe -->
+        <h1 class="bg-blue-950 text-white fixed z-20">aman code step by step</h1>
+        <!-- so fixed kiye humlog h1 tag ko toh ye iska postion fix hogya aur z-20 lagane se thoda
+        niche wale mein bhi aagaya SO h1 KA POSTTION FIX RAHEGA -->
+    </div>
+
+    <div class="bg-green-400 size-96 relative">
+        <!-- now humlog iske andar ek aur chota sa div rakhenge aur iss chote se div 
+        k andar humlog property use karenge insert ki toh iss insert propertty ki help se ye andar 
+        wala div ko hum bahar wale bade div k border se hata denge aur agar inset-10 karenge
+        toh bahar wale div k border se thoda space lega aur agar inset-20 karenge toh bahar wale 
+        div se thoda aur jyada space leke rahega note - propert inset hai insert nhi hai     -->
+        <div class="bg-green-700 size-32 inset-32 absolute"></div>
+        <!--ttoh humlog aise  inset ki help se kisi bhi div ko move kar skte hai using absolute postion
+        for that moving div and relative postion for parent div-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- now ismein hum background classes ko use krke dekhenge toh sbse pehle humlog 
+    ek div ko background image deke dekhenge  than usko center wagera kaise karna hai no-repeat
+    kaise krna hai container aur cur property kaise lagana hai woh sab dekhenge then ek div k upar
+    gradient kaise apply karte hai shadow kaise apply krte hai wih bhi dekhenge and 2 div k bich
+    mein mix blending kaise hoti hai isko bhi hum samajne wale hai   -->
+
+    <!-- <div class="big-red-500 size-96" style =" background-image : url(funny-image.jpg);">
+        so but ye image Repeat ho rhi hai but hum chahte hai ki ye image Repeat na ho
+        
+        Hello Tailwind 
+    </div> -->
+
+    <!--so hum chahte hai ki image Repeatt na hoo-->
+    <div class="bg-red-500 size-96 bg-[url(funny-image.jpg)] bg-no-repeat bg-center" >
+        <!--so bg-no-repeat se image Repeat nhi hogi so image ek hii baar dikhega and bg-center se image
+        ye center mein dikhega so here humlog upar ki tarah style use nhi kiye sirf humne Tailwindcss k
+        classes use kiye like bg-[url(funny-image.jpg)] and bg-no-repeat bg-center-->
+        code step by step
+    </div>
+
+    <!--now hum dekehenge ki Gradient kaise use karenge-->
+    <div class="gradient bg-gradient-to-t to-blue-500 from-red-500 size-96">
+       <!--so top se blue color start hua and bottom mein Red color tak gya it is gradient
+       i.e top se blue wala color sttart hua i.e to-t se blue color start hua i.e bg-gradient-to-t
+       means top par hai blue phir se i.e bg-gradient-to-t ye Top hai blue color
+       and agar i.e bg-gradient-to-b idhar b use karenge means bottom par blue color aayega -->
+    </div>
+
+    <!--similarly we will use Gradient -->
+    <div class="gradient bg-gradient-to-t to-green-500 from-violet-500 size-96"></div>
+    <!--means ye green se violet color tak jayega i.e top mein green color hoga and bottom mein
+    violet color hogga-->
+
+    <!--so iss ttarah se Gradient color use karenge-->
+    <div class="gradient bg-gradient-to-tr to-yellow-500 from-red-500 size-96"></div>
+    <!--so ye tr means top-right mein yellow color se red color tak jayega gradient color-->
+
+    <!--now dekhte hai shaodow classes ki-->
+    <div class="size-96 m-16 shadow-orange-400 shadow-2xl"></div>
+    <!--so shadow-2xl means ye size hai shadow ki-->
+
+    <!--now inner shadow bhi use kar skte hai aur isko blue color denge-->
+    <div class="size-96 m-16 shadow-inner shadow-blue-500"></div>
+</body>
+</html>
