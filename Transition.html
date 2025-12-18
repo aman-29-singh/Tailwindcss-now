@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- so ye Transitin and Transform classes ki help se humlog shape and size mein changes kar sakte 
+    hai time duration k hisaab se ya toh humlog yeh bhi keh saktte hai ki humlog halke fulke animation
+    laga sakte hai halke fulke 
+    jaise humlog kisi bhi button par hover karenge toh woh button ki ya toh shape change hogi ya toh
+    uski size change hogi woh bhi time k saath and agar image par hover karenge toh image rotate bhi
+    hogi aur  badi bhi hogi bohat hii slow slow eikdum se nhi hogi toh aisi chize humlog Transition
+    ya Transform classes ki help se kar sakte hai
+    toh Transition ka matlab hota hai animation k liye time duration dena aur Transform ka matlab hota hai
+    ki shape,size,position, jagah ye saari chizo ko change karna  -->
+    <button class="bg-blue-500 p-2 m-10 text-white rounded hover:bg-blue-800
+    transition duration-1000">
+        Login
+    </button>
+    <button class="bg-blue-500 p-2 m-10 text-white rounded hover:bg-blue-800">
+        sign up
+    </button>
+
+    <button class="bg-blue-500 p-2 m-10 text-white rounded hover:opacity-5
+    transition duration-1000">
+        Button 1
+        <!--so isse jaise button k upar hover karenge toh due to transition so smoothly opacity
+        change hoga on hover because transition duration-1000 diya hai ,eans 1 second ka-->
+    </button>
+
+    <button class="bg-red-500 p-2 m-10 text-white rounded hover:rotate-180
+    transition-transform duration-1000">
+        Buttton 2
+        <!--so isse hover par rotate hoga but smooth transition k liye we have transition-transform
+        durartion-1000-->
+    </button>
+
+    <button class="bg-red-500 p-2 m-10 text-white rounded hover:scale-75
+    transition-transform duration-1000">
+        Button 3
+        <!--so hover karne  par scale-75 means button chota hoga but instant ho jayega so smoothly
+        transition ki aaram se chota hoo button so we had added transition-transform duration-1000
+        ye add karna padta hai toh tarnsition smooth hota hai aur  ye scale ko khum kisi bhi direction mein 
+        change kar sakte hai  like x-dirextion mein bhi scale kar  sakte hai like  scale-x aise aur
+        agar y-direction mein scale karna hai so scale-y aise kar sakte hai toh hum chaiye toh iske axis
+        bhi define kar sktte hai-->
+    </button>
+
+    <button class="bg-red-500 m-10 p-2 hover:scale-x-150 transition-transform duration-1000">
+        Button 4
+    </button>
+
+    <img src="funny-image.jpg" class="m-5 w-56 hover:rotate-45 hover:scale-125 transition-transform
+    duration-1000"/> <!--so humlog image ko rotate karwa rahe hai -->
+</body>
+</html>
